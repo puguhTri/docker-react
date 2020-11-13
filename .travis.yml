@@ -2,7 +2,6 @@ sudo : required
 services : 
   - docker
 
-
 befotre_install :
   - docker build -t puguhTri/docker-react -f Dockerfile-dev .
 
