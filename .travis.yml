@@ -1,0 +1,11 @@
+sudo : required
+services : 
+  - docker
+
+
+befotre_install :
+  - docker build -t puguh/docker-react -f Dockerfile-dev .
+
+
+script:
+  - docker run puguh/docker-react npm run test -- --coverage
